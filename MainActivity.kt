@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val btnReset = findViewById<MaterialButton>(R.id.btnReset)
         val txtResult = findViewById<TextView>(R.id.txtResult)
 
-        val items = listOf("morning", "afternoon", "evening", "night")
+        val items = listOf("TENT", "MARSHMALLOWS", "FLASHLIGHT")
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
         dropdown.setAdapter(adapter)
 
@@ -27,13 +27,12 @@ class MainActivity : AppCompatActivity() {
             val input = dropdown.text.toString().lowercase()
 
             if (input.isEmpty()) {
-                Toast.makeText(this, "Enter time of day", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "ADD GEAR", Toast.LENGTH_SHORT).show()
             } else {
                 val result = when(input) {
-                    "morning" -> "☕ Coffee with a friend"
-                    "afternoon" -> "🍔 Lunch or study"
-                    "evening" -> "🌆 Dinner or walk"
-                    "night" -> "🎬 Movie or chat"
+                    "SHELTER" -> "4-PERSON WATER PROOF"
+                    "MARSHMALLOWS" -> " FOR S`MORES (MEGA SIZE)"
+                    "FLASHLIGHT" -> "CHECK BATTRIES(AA)"
                     else -> "❌ Invalid input"
                 }
                 txtResult.text = result

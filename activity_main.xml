@@ -9,19 +9,33 @@
         android:id="@+id/dropdownTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Select time of day"/>
+        android:hint="ITEM NAME "/>
 
     <Button
         android:id="@+id/btnSuggest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get Suggestion"/>
+        android:text="CATEGORY"/>
 
     <Button
         android:id="@+id/btnReset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="QUANTITY"/>
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPECIAL NOTES"/>
+<Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Reset"/>
+
+    
+
+    
 
     <TextView
         android:id="@+id/txtResult"
